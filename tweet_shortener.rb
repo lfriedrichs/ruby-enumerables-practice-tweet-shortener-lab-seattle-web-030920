@@ -16,5 +16,5 @@ def word_substituter(string)
       dictionary[word] 
     else 
       word 
-    end}.join{' '}
+    end}
 end 
