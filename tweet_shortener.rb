@@ -11,10 +11,11 @@ def dictionary
 end 
 
 def word_substituter(string) 
-  string.split(' ').map {|word| 
+  new_string = string.split(' ').map {|word| 
     if dictionary.keys.include?(word)
       dictionary[word] 
     else 
       word 
-    end}
+    end }
+    new_string.join(' ')
 end 
