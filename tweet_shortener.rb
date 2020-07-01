@@ -9,3 +9,12 @@ def dictionary
 "at" => "@" 
 "and" => "&"}
 end 
+
+def word_substituter(string) 
+  string.split(' ').map {|word| 
+    if dictionary.keys.include?(word)
+      dictionary[word] 
+    else 
+      word 
+    end}.join{' '}
+end 
