@@ -27,3 +27,11 @@ def bulk_tweet_shortener(array)
     array.map {|tweet| 
     puts word_substituter(tweet) }
 end 
+
+def selective_tweet_shortener(string)
+    if string.size > 140 
+      string[0..140] + "..."
+    else 
+      string 
+    end
+end 
