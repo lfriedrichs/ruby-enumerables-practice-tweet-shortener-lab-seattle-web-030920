@@ -15,8 +15,8 @@ end
 
 def word_substituter(string) 
   new_string = string.split(' ').map {|word| 
-    if dictionary.keys.include?(word)
-      dictionary[word] 
+    if dictionary.keys.include?(word.downcase)
+      dictionary[word.downcase] 
     else 
       word 
     end }
